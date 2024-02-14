@@ -1,0 +1,16 @@
+.book-card{
+    width: auto;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+}
+.book-image{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+}
+.flex
+{
+    display: flex;
+    align-items: center
+}

@@ -1,0 +1,13 @@
+<div>
+    <div class="center">
+        <input type="text" name="search" id="search" (keyup.enter)="search($event)">
+    </div>
+    <div style="display: flex;">
+        <div style="width: 70%;">
+            <app-book *ngFor="let book of books" [book]="book" (selectedBook)="selectedBook($event)"/>
+        </div>
+       <div style="width: 30%;">
+        <app-wishlist  />
+       </div>
+    </div>
+</div>

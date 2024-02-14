@@ -1,0 +1,15 @@
+<div>
+    <div class="align">
+        <mat-icon>book</mat-icon>
+        <p> My Reading Wishlist ( {{books.length}} )</p>
+    </div>
+    <div class="align" *ngFor="let book of books; let i = index">
+
+        <div style="display: flex;">
+            <mat-card mat-card-avatar style="background-size: cover; "
+                [style.background-image]="'url('+book?.imageLinks?.smallThumbnail+')'"></mat-card>
+           <h4 style="padding-top: 5px; padding-left: 5px;"> {{book.title}}</h4> 
+        </div>
+        <button mat-icon-button (click)="delete(i)"><mat-icon>delete</mat-icon></button>
+    </div>
+</div>
